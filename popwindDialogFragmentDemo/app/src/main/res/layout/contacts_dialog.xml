@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/contactsLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/whiteTextView"
+            android:paddingTop="14dp">
+
+            <ImageView
+                android:id="@+id/phoneImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/ic_window_close_normal"
+                android:paddingTop="6dp" />
+
+            <TextView
+                android:id="@+id/contactNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/contactTV"
+                android:layout_alignLeft="@+id/contactTV"
+                android:layout_alignStart="@+id/contactTV"
+                android:text="Все"
+                android:textColor="@color/blackTextView"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/contactTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/phoneImage"
+                android:layout_marginLeft="25dp"
+                android:layout_marginStart="25dp"
+                android:layout_toEndOf="@+id/phoneImage"
+                android:layout_toRightOf="@+id/phoneImage"
+                android:text="@string/contactsString"
+                android:textColor="@color/greyTextView"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/skypeContactsLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/contactsLayout"
+            android:layout_centerHorizontal="true"
+            android:background="@color/whiteTextView">
+
+            <ImageView
+                android:id="@+id/skypeImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/ic_window_close_normal"
+                android:paddingTop="6dp" />
+
+            <TextView
+                android:id="@+id/skypeName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/skypeTV"
+                android:layout_alignLeft="@+id/skypeTV"
+                android:layout_alignStart="@+id/skypeTV"
+                android:text="Все"
+                android:textColor="@color/blackTextView"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/skypeTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/skypeImage"
+                android:layout_marginLeft="25dp"
+                android:layout_marginStart="25dp"
+                android:layout_toEndOf="@+id/skypeImage"
+                android:layout_toRightOf="@+id/skypeImage"
+                android:text="@string/skypeString"
+                android:textColor="@color/greyTextView"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/allUserFlats"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/skypeContactsLayout"
+            android:layout_centerHorizontal="true"
+            android:background="@color/whiteTextView"
+            android:paddingBottom="14dp">
+
+            <ImageView
+                android:id="@+id/otherOffersImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/ic_window_close_normal"
+                android:paddingTop="6dp" />
+
+            <TextView
+                android:id="@+id/otherOffersTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="25dp"
+                android:layout_marginStart="25dp"
+                android:layout_toEndOf="@+id/otherOffersImage"
+                android:layout_toRightOf="@+id/otherOffersImage"
+                android:text="@string/allFlats"
+                android:textColor="@color/blackTextView"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</FrameLayout>

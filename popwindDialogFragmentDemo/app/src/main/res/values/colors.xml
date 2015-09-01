@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="whiteTextView">#fff</color>
+    <color name="blackTextView">#000</color>
+    <color name="greyTextView">#f0f</color>
+</resources>

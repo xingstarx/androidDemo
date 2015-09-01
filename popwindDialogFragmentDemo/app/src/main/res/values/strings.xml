@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">popwindDialogFragmentDemo</string>
+
+    <string name="hello_world">Show Bottom Dialog</string>
+    <string name="action_settings">Settings</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="contactsString">contact infos</string>
+    <string name="skypeString">skype infos</string>
+    <string name="allFlats">all flats</string>
+</resources>
